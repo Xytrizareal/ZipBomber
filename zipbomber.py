@@ -68,7 +68,7 @@ for i in range(range_thing):
         zip_file.write(filepath, os.path.basename(filepath))
     os.remove(filepath)
 
-    print(f"{percent_complete}% complete - {i + 1}/{range_thing} files created - {format_unit_size(zip_size)} of data made - {format_time(elapsed_time)} elapsed - {format_time(remaining_time)} remaining", end="\r")
+    print(f"{percent_complete}% complete - {i + 1}/{range_thing} files created - {format_unit_size(zip_size)} of data made - {format_unit_size(os.path.getsize(zip_location))} zip size - {format_time(elapsed_time)} elapsed - {format_time(remaining_time)} remaining", end="\r")
 
 total_time = time.time() - start_time
 
