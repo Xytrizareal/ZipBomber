@@ -57,8 +57,6 @@ for i in range(range_thing):
 
 total_time = time.time() - start_time
 
-print(f"Total time: {total_time:.2f} seconds")
-
 print("Process completed.")
 print(f"Unzipped storage size: {format_unit_size(zip_size)}")
 print(f"Zip storage size: {format_unit_size(os.path.getsize(zip_location))}")
