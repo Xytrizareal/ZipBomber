@@ -22,7 +22,7 @@ def format_time(unformatted_time):
         unformatted_time /= 60
         i += 1
 
-    time = f"{round(unformatted_time, 2)} {units[i]}"
+    time = f"{round(unformatted_time, 2)}{units[i]}"
     return time
 
 zip_location = input("Zip Bomb output location: ").replace("\\", "/").strip("\"")
